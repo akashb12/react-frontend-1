@@ -1,0 +1,20 @@
+.section-3 {
+    padding-bottom: 10vmin ;
+  }
+.section-3 .skill-card {
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.section-3 .skill-card img {
+    width: 150px;
+}
+.section-3 .skill-card .card-body {
+   text-align: center;
+}
+.skill-card svg {
+   transition: 0.5s;
+  }
+.skill-card svg:hover {
+    fill: #f7872b;
+  }

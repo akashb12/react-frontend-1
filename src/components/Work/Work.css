@@ -1,0 +1,21 @@
+.section-5 {
+    padding: 10vmin 0vmin;
+  }
+  .section-5 .card{
+    background: #91ff00;
+}
+  .section-5 .card img{
+      border-radius: 15px;
+      z-index: 1;
+  }
+  .section-5 .card-body{
+      visibility: hidden;
+      transform: translateY(-150px);
+      height: 0px;
+  }
+  .section-5 .card:hover .card-body{
+      visibility: visible;
+      transform: translateY(0px);
+      transition: .5s;
+      height: auto;
+  }

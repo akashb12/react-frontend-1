@@ -1,95 +1,68 @@
-.NavBar {
-    background-color:#021E39;
-    width: 100%;
-    height: 80px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-}
-.NavBar .leftSide{
-    flex:50%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-.NavBar .leftSide .image-div img{
-    width: 90px;
-}
-.NavBar .rightSide .bar{
-    display: none;
-}
-.NavBar .rightSide .links{
-    max-height: 80px;
-}
-.NavBar .rightSide .links a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin-left: 15px;
-}
-.NavBar .rightSide .links a:hover{
-    border-bottom: 5px solid white;
-    margin-top: 5px;
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
 }
-.NavBar .rightSide{
-    flex:50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 50px;
+header {
+  background: #ff512f;
+  /* fallback for old browsers */
+  background: var(--bggradient);
 }
-/* .NavBar .rightSide input{
-    width: 220px;
-    height: 30px;
-    border: none;
-    border-radius: 4px;
-    font-size: 20px;
-    padding-left: 15px;
-    color: black;
+header .nav-links {
+  font-family: var(--Sniglet-font);
+    font-size: 1.1rem !important;
+    color: whitesmoke !important;
+    padding-right: 20px;
 }
-.NavBar .rightSide button{
-    height: 32px;
-    width: 70px;
-    font-size: 16px;
-} */
+header .navbar-brand {
+  font-size: 2rem;
+  color: white !important;
+}
+header .ml-auto.navbar-nav {
+  padding: 0.9em;
+}
 
-@media only screen and (max-width : 850px){
-    .NavBar .rightSide .links a{
-
-        font-size: 20px;
-    }
+/* header row */
+header .row .col-md-7 {
+  font-family: var(--Rubik);
+  padding: 148px 10px;
+  padding-bottom: 236px;
+  color: white;
+  text-align: left;
 }
-@media only screen and (max-width : 750px){
-    .NavBar .rightSide .links a{
-
-        font-size: 15px;
-    }
+header .container .col-md-7 h1 {
+  font-size: 7.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+  letter-spacing: 3px;
 }
-@media only screen and (max-width : 650px){
-    .NavBar .rightSide .bar{
-        display: flex;
-        padding-left: 10px;
-        color: white;
-        width: 40px;
-    }
-    .NavBar .rightSide .links{
-        display: none;
-    }
-    .NavBar .rightSide .hidden{
-        position: absolute;
-        left: 0px;
-        top: 80px;
-        height: 230px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color:#021E39;
-    }
-    .NavBar .rightSide .hidden a{
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        margin-top: 25px;
-    }
+header .container .col-md-7 h6 {
+  padding: 15px;
+  letter-spacing: 4px;
+}
+header .container .col-md-7 p {
+  padding: 10px 20px;
+}
+header .row .col-md-5 img {
+  width: 70%;
+  margin-top: 140px;
+}
+
+/* animation */
+header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
